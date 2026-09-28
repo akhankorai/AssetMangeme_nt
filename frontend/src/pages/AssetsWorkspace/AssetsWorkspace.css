@@ -1,0 +1,163 @@
+.nativeTableWrap {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    margin-bottom: 24px;
+}
+
+.inventoryTable {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.inventoryTable th {
+    padding: 14px 20px;
+    color: #475569;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: #f8fafc;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.inventoryTable td {
+    padding: 12px 16px;
+    vertical-align: middle;
+    color: #334155;
+    font-size: 0.875rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.nativeTableRow {
+    transition: background-color 0.2s ease;
+}
+
+.nativeTableRow:hover {
+    background-color: #f8fafc;
+}
+
+.nativeTableRow.active {
+    background-color: #f0f9ff;
+}
+
+.nativeTableRow:last-child td {
+    border-bottom: none;
+}
+
+.assetNameCell {
+    font-weight: 600;
+    color: #0f172a;
+}
+
+.inventoryAssetCellBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    color: #0f172a;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.inventoryAssetCellBtn:hover {
+    color: #3b82f6;
+}
+
+.inventoryAssetIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #e0f2fe;
+    color: #0284c7;
+
+    border-radius: 8px;
+}
+
+.inventoryTable th:nth-child(1) {
+    width: 25%;
+}
+
+.inventoryTable th:nth-child(2) {
+    width: 15%;
+}
+
+.inventoryTable th:nth-child(3) {
+    width: 15%;
+}
+
+.inventoryTable th:nth-child(4) {
+    width: 15%;
+}
+
+.inventoryTable th:nth-child(5) {
+    width: 15%;
+}
+
+.inventoryTable th:nth-child(6) {
+    width: 15%;
+    text-align: right;
+}
+
+.inventoryTable td.inventoryActions {
+    text-align: right;
+    white-space: nowrap !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 6px;
+}
+
+.inventoryTable th.actionsCol {
+    /* Actions col header */
+    white-space: nowrap !important;
+}
+
+.inventoryTable td.inventoryActions .iconActionBtn {
+    margin-left: 8px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.inventoryTable td.inventoryActions .iconActionBtn[title="View"] {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+.inventoryTable td.inventoryActions .iconActionBtn[title="View"]:hover {
+    background-color: #bae6fd;
+}
+
+.inventoryTable td.inventoryActions .iconActionBtn[title="Edit"] {
+    background-color: #dcfce7;
+    color: #166534;
+}
+.inventoryTable td.inventoryActions .iconActionBtn[title="Edit"]:hover {
+    background-color: #bbf7d0;
+}
+
+.inventoryTable td.inventoryActions .iconActionBtn[title="Delete"],
+.inventoryTable td.inventoryActions .iconActionBtn.deleteBtn {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+.inventoryTable td.inventoryActions .iconActionBtn[title="Delete"]:hover,
+.inventoryTable td.inventoryActions .iconActionBtn.deleteBtn:hover {
+    background-color: #fecaca;
+}

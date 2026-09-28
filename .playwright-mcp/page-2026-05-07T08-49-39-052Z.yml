@@ -1,0 +1,12 @@
+- dialog "Login" [ref=e7]:
+  - heading "Login" [level=1] [ref=e8]
+  - paragraph [ref=e6]: Sign in to access the Operations Console.
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - text: Username
+      - textbox "Username" [ref=e11]: admin
+    - generic [ref=e12]:
+      - text: Password
+      - textbox "Password" [ref=e13]: Admin@12345
+    - generic [ref=e17]: Failed to fetch
+    - button "Sign in" [ref=e15] [cursor=pointer]

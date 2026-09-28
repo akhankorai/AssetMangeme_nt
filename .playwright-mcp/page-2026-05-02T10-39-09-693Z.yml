@@ -1,0 +1,150 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - generic [ref=e10]:
+          - strong [ref=e11]: Precision Assets
+          - generic [ref=e12]: Enterprise Suite
+      - generic [ref=e13]:
+        - button "Vehicle Assets" [expanded] [ref=e14] [cursor=pointer]:
+          - generic [ref=e15]: Vehicle Assets
+          - img [ref=e16]
+        - navigation "Vehicle Assets" [ref=e18]:
+          - button "Dashboard" [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+            - generic [ref=e30]: Dashboard
+          - button "Assets" [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+            - generic [ref=e35]: Assets
+          - button "Schedule" [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+            - generic [ref=e39]: Schedule
+          - button "Expense" [ref=e40] [cursor=pointer]:
+            - img [ref=e41]
+            - generic [ref=e47]: Expense
+          - button "Tasks" [ref=e48] [cursor=pointer]:
+            - img [ref=e49]
+            - generic [ref=e52]: Tasks
+          - button "Team" [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+            - generic [ref=e59]: Team
+          - button "Reports" [ref=e60] [cursor=pointer]:
+            - img [ref=e61]
+            - generic [ref=e64]: Reports
+          - button "Settings" [ref=e65] [cursor=pointer]:
+            - img [ref=e66]
+            - generic [ref=e77]: Settings
+      - button "Information Technology" [ref=e79] [cursor=pointer]:
+        - generic [ref=e80]: Information Technology
+        - img [ref=e81]
+      - button "Feeding" [ref=e84] [cursor=pointer]:
+        - generic [ref=e85]: Feeding
+        - img [ref=e86]
+      - button "Cleaning" [ref=e89] [cursor=pointer]:
+        - generic [ref=e90]: Cleaning
+        - img [ref=e91]
+      - button "Shed Fans" [ref=e94] [cursor=pointer]:
+        - generic [ref=e95]: Shed Fans
+        - img [ref=e96]
+      - button "Electrical Tools" [ref=e99] [cursor=pointer]:
+        - generic [ref=e100]: Electrical Tools
+        - img [ref=e101]
+      - button "Paint Tools" [ref=e104] [cursor=pointer]:
+        - generic [ref=e105]: Paint Tools
+        - img [ref=e106]
+      - button "Plumbing Tools" [ref=e109] [cursor=pointer]:
+        - generic [ref=e110]: Plumbing Tools
+        - img [ref=e111]
+      - button "Welding Tools" [ref=e114] [cursor=pointer]:
+        - generic [ref=e115]: Welding Tools
+        - img [ref=e116]
+      - button "Furniture" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Furniture
+        - img [ref=e121]
+  - main [ref=e123]:
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - img [ref=e126]
+        - searchbox [ref=e129]
+      - generic [ref=e130]:
+        - button "Notifications" [ref=e131] [cursor=pointer]:
+          - img [ref=e132]
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - strong [ref=e137]: Operations Console
+            - generic [ref=e138]: Assets view
+          - generic [ref=e139]: "8"
+    - generic [ref=e536]:
+      - generic [ref=e537]:
+        - button "Registration" [ref=e538] [cursor=pointer]
+        - button "Global Directory" [ref=e539] [cursor=pointer]
+      - generic [ref=e540]:
+        - generic [ref=e541]:
+          - generic [ref=e543]:
+            - strong [ref=e544]: New Entry
+            - text: General Information
+          - generic [ref=e545]:
+            - generic [ref=e546]:
+              - generic [ref=e547]: Asset Name
+              - textbox "Asset Name" [ref=e548]:
+                - /placeholder: e.g. Industrial Server Node R-42
+                - text: QA Vehicle Asset 20260502
+            - generic [ref=e549]:
+              - generic [ref=e550]: Asset Type
+              - button "Asset Type" [ref=e552] [cursor=pointer]:
+                - generic [ref=e553]: Bike
+                - img [ref=e554]
+            - generic [ref=e556]:
+              - generic [ref=e557]: Location Code
+              - combobox "Location Code" [ref=e558]:
+                - option "Select station"
+                - option "Head Office"
+                - option "Unit 1" [selected]
+                - option "Unit 2"
+                - option "Unit 3"
+            - generic [ref=e559]:
+              - generic [ref=e560]: Purchase Date
+              - textbox "Purchase Date" [ref=e561]: 2026-05-02
+            - generic [ref=e562]:
+              - generic [ref=e563]: Warranty Expiry
+              - textbox "Warranty Expiry" [ref=e564]: 2027-05-02
+            - generic [ref=e565]:
+              - generic [ref=e566]: Meter Reading
+              - spinbutton "Meter Reading" [active] [ref=e567]: "1234"
+          - button "Upload Technical Documentation PDF, JPG up to 10MB" [ref=e568] [cursor=pointer]:
+            - img [ref=e569]
+            - strong [ref=e573]: Upload Technical Documentation
+            - generic [ref=e574]: PDF, JPG up to 10MB
+          - generic [ref=e575]:
+            - button "Save Draft" [ref=e576] [cursor=pointer]
+            - button "Proceed to Next Step" [ref=e577] [cursor=pointer]
+        - complementary [ref=e578]:
+          - generic [ref=e579]:
+            - generic [ref=e581]:
+              - strong [ref=e582]: Honda CG 125
+              - generic [ref=e583]: "ID: BI-125-184117"
+            - generic [ref=e586]:
+              - generic [ref=e587]:
+                - generic [ref=e588]: Current Status
+                - strong [ref=e589]: Operational
+              - generic [ref=e591]:
+                - generic [ref=e592]: Last Inspection
+                - strong [ref=e593]: Apr 29, 2026
+          - generic [ref=e594]:
+            - generic [ref=e595]:
+              - heading "Maintenance Log" [level=2] [ref=e596]
+              - button "Export PDF" [ref=e597] [cursor=pointer]
+            - generic [ref=e598]:
+              - article [ref=e599]:
+                - generic [ref=e601]:
+                  - text: Apr 29, 2026
+                  - strong [ref=e602]: Honda CG 125 inspection synced
+                  - paragraph [ref=e603]: Latest record pulled from the asset directory for Head Office.
+              - article [ref=e604]:
+                - generic [ref=e606]:
+                  - text: Apr 29, 2026
+                  - strong [ref=e607]: Software optimization
+                  - paragraph [ref=e608]: Configuration baseline refreshed and integrity metrics recalculated for this unit.
+          - button "View Complete History" [ref=e609] [cursor=pointer]
+    - generic [ref=e157]: Assets view is active in Vehicle Assets.

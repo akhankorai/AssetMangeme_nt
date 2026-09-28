@@ -1,0 +1,56 @@
+cd "d:\Development\Asset Management\Asset Management\frontend"
+$env:VITE_API_PROXY_TARGET="http://127.0.0.1:8010"
+$env:VITE_VEHICLE_ASSETS_API_TARGET="http://192.168.100.240:21021"
+
+# Option A (recommended): direct bearer token from that system
+$env:VITE_VEHICLE_ASSETS_API_BEARER_TOKEN=""
+
+# Option B: login credentials for auto token fetch
+$env:VITE_VEHICLE_ASSETS_API_USERNAME="m.hamza@omegadairy.com.pk"
+$env:VITE_VEHICLE_ASSETS_API_PASSWORD="Hamza123@"
+
+npm.cmd run dev -- --host 0.0.0.0 --port 5173
+
+
+
+cd "d:\Development\Asset Management\Asset Management\backend"
+$env:DJANGO_ALLOWED_HOSTS="localhost,127.0.0.1"
+$env:DB_ENGINE="sqlserver_compat"
+$env:DB_HOST="localhost"
+$env:DB_INSTANCE="SQLEXPRESS"
+$env:DB_NAME="AssetManagement"
+$env:DB_DRIVER="ODBC Driver 17 for SQL Server"
+$env:DB_EXTRA_PARAMS="Encrypt=no;TrustServerCertificate=yes"
+$env:VEHICLE_ASSETS_API_BASE_URL="http://192.168.100.240:21021"
+$env:VEHICLE_ASSETS_AUTH_ENDPOINT="/api/TokenAuth/Authenticate"
+$env:VEHICLE_ASSETS_LIST_ENDPOINT="/api/services/app/AssetRegistrations/GetAll"
+$env:VEHICLE_ASSETS_DEPARTMENT="Vehicle Assets"
+
+# Option A (recommended): direct bearer token from upstream vehicle API
+$env:VEHICLE_ASSETS_API_BEARER_TOKEN=""
+
+# Option B: login credentials for auto token fetch
+$env:VEHICLE_ASSETS_API_USERNAME="m.hamza@omegadairy.com.pk"
+$env:VEHICLE_ASSETS_API_PASSWORD="Hamza123@"
+
+.\.venv\Scripts\python.exe manage.py migrate
+.\.venv\Scripts\python.exe manage.py runserver 127.0.0.1:8010 --noreload
+
+
+
+Credentials:
+
+admin     Admin@12345
+
+fuel.inspector
+fuel.inspector2
+fuel.provider
+fuel.provider2
+fuel.requester
+fuel.requester2
+rolecheck_user
+schedule.creator
+schedule.inspector
+schedule.performer
+
+Password: 123456

@@ -1,0 +1,649 @@
+/* ==========================================================================
+   Operations Console — admin theme
+   Subject: fleet/vehicle-asset ops console (users, roles, permissions)
+   Palette: deep teal (primary action) + signal amber (fuel/attention) on a
+   quiet paper-grey base — reads like a dispatch console, not a generic
+   SaaS dashboard blue.
+   Type: Space Grotesk for headings (technical, geometric), Inter for body,
+   IBM Plex Mono for identifiers/tags/counts (usernames, role slugs,
+   permission counts) — the "readout" layer.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+:root {
+  --ink: #1a1d23;
+  --ink-soft: #1458b8;
+  --muted: #576375;
+
+  --base: #fafafb;
+  --surface: #f8fafc;
+  --line: #fafafb;
+  --line-soft: #fafafb;
+
+  --primary: #1a1d23;
+  --primary-dark: #1a1d23;
+  --primary-soft: #fafafb;
+
+  --accent: #1458b8;
+  --accent-soft: #fafafb;
+
+  --danger: #1458b8;
+  --danger-soft: #fafafb;
+
+  --success: #1458b8;
+  --success-soft: #fafafb;
+
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 16px;
+
+  --shadow-card: 0 1px 2px rgba(18, 22, 28, 0.04), 0 1px 12px rgba(18, 22, 28, 0.05);
+  --shadow-pop: 0 8px 28px rgba(18, 22, 28, 0.14);
+
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--ink);
+}
+
+/* ---------- section header ---------- */
+
+.adminSectionHeader {
+  padding: 28px 4px 20px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 28px;
+}
+
+.adminSectionHeader h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0 0 4px 0;
+}
+
+.adminSectionHeader p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* ---------- create-user form ---------- */
+
+.premiumFormGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 24px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+}
+
+.premiumFormFull {
+  grid-column: 1 / -1;
+}
+
+.floatingLabelInput {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.floatingLabelInput input {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--base);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 16px 14px 8px;
+  outline: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.floatingLabelInput input:focus {
+  border-color: var(--primary);
+  background: var(--surface);
+}
+
+.floatingLabelInput label {
+  position: absolute;
+  left: 14px;
+  top: 12px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  pointer-events: none;
+  transform-origin: left top;
+  transition: transform 0.15s ease, color 0.15s ease, top 0.15s ease;
+}
+
+.floatingLabelInput input:focus + label,
+.floatingLabelInput input:not(:placeholder-shown) + label {
+  top: 6px;
+  transform: scale(0.72);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* ---------- custom multiselect (roles) ---------- */
+
+.customMultiSelect {
+  position: relative;
+}
+
+.customMultiSelect > summary {
+  list-style: none;
+}
+.customMultiSelect > summary::-webkit-details-marker {
+  display: none;
+}
+
+.customMultiSelectTrigger {
+  min-height: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  background: var(--base);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.customMultiSelectTrigger:hover {
+  border-color: var(--muted);
+}
+
+.customMultiSelectTrigger.active {
+  background: var(--surface);
+}
+
+.customMultiSelectMenu {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 260px;
+  max-height: 280px;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-pop);
+  padding: 8px;
+}
+
+.customMultiSelectOption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.customMultiSelectOption:hover {
+  background: var(--base);
+}
+
+.customMultiSelectOption.selected {
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+/* role chip — the "readout" tag */
+
+.roleChip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  color: var(--primary-dark);
+  background: var(--primary-soft);
+  border: 1px solid rgba(15, 110, 93, 0.18);
+  border-radius: 6px;
+  padding: 3px 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.roleChip.superuser {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: rgba(200, 121, 15, 0.25);
+}
+
+.roleChipGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 6px 0;
+}
+
+/* ---------- interactive meta fields (replaces dense text lines) ---------- */
+
+.metaField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px 0;
+}
+
+.metaFieldLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.metaFieldValue {
+  font-size: 0.92rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+/* role chip that behaves like a real button (click = remove) */
+.roleChip.removable {
+  cursor: pointer;
+  border: none;
+  gap: 6px;
+  transition: background 0.12s ease, color 0.12s ease;
+}
+
+.roleChip.removable:hover {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+
+.chipRemove {
+  font-weight: 700;
+  opacity: 0.55;
+}
+
+.roleChip.removable:hover .chipRemove {
+  opacity: 1;
+}
+
+/* "+ add role" trigger, styled to match the chip family but dashed = additive */
+.customMultiSelect.chipAdd {
+  display: inline-flex;
+}
+
+.roleChip.addChip {
+  cursor: pointer;
+  background: var(--surface);
+  border: 1px dashed var(--muted);
+  color: var(--ink-soft);
+  font-family: 'Inter', sans-serif;
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.roleChip.addChip:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-soft);
+}
+
+/* read-only module/action badges — visually distinct from actionable role chips */
+.moduleBadge {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  background: var(--base);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+
+.moduleBadge.all {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: rgba(200, 121, 15, 0.25);
+  font-weight: 600;
+}
+
+/* ---------- buttons ---------- */
+
+.buttonRow.adminActionRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.primaryButton,
+.secondaryButton {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-radius: var(--radius-sm) !important;
+  padding: 11px 22px !important;
+  border: none !important;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.primaryButton {
+  background: var(--primary) !important;
+  color: #0f172a !important;
+  box-shadow: 0 1px 2px rgba(15, 110, 93, 0.25);
+}
+
+.primaryButton:hover {
+  background: var(--primary-dark) !important;
+  box-shadow: 0 4px 14px rgba(15, 110, 93, 0.28);
+}
+
+.secondaryButton {
+  background: var(--surface) !important;
+  color: var(--ink-soft) !important;
+  border: 1.5px solid var(--line) !important;
+}
+
+.secondaryButton:hover {
+  border-color: var(--muted) !important;
+  color: var(--ink) !important;
+}
+
+.primaryButton:active,
+.secondaryButton:active {
+  transform: translateY(1px);
+}
+
+/* small action buttons on cards (.primary / .secondary / .danger) */
+
+.adminUserCardActions button {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 7px;
+  padding: 7px 13px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.adminUserCardActions button.primary {
+  background: var(--primary);
+  color: #f8fafc;
+}
+.adminUserCardActions button.primary:hover {
+  background: var(--primary-dark);
+}
+
+.adminUserCardActions button.secondary {
+  background: var(--surface);
+  color: var(--ink-soft);
+  border-color: var(--line);
+}
+.adminUserCardActions button.secondary:hover {
+  border-color: var(--muted);
+}
+
+.adminUserCardActions button.danger {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.adminUserCardActions button.danger:hover {
+  background: var(--danger);
+  color: #f8fafc;
+}
+
+/* ---------- user grid / cards ---------- */
+
+.adminUserGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.adminUserCard {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 20px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.adminUserCard:hover {
+  box-shadow: 0 4px 20px rgba(18, 22, 28, 0.08);
+  transform: translateY(-1px);
+}
+
+.adminUserCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.adminUserCardHeader h3 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0;
+}
+
+.adminUserCardMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+
+.adminUserCardActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.adminUserCardActions details.customMultiSelect summary {
+  border: 1.5px solid var(--line);
+}
+
+/* ---------- switch / toggle ---------- */
+
+.switchLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.switchInput {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switchToggle {
+  position: relative;
+  width: 42px;
+  height: 24px;
+  background: var(--line);
+  border-radius: 999px;
+  transition: background 0.18s ease;
+  flex-shrink: 0;
+}
+
+.switchToggle::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #f8fafc;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  transition: transform 0.18s ease;
+}
+
+.switchInput:checked + .switchToggle {
+  background: var(--primary);
+}
+
+.switchInput:checked + .switchToggle::after {
+  transform: translateX(18px);
+}
+
+/* ---------- role editor ---------- */
+
+.roleEditorPanel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+}
+
+.roleEditorTabs button {
+  font-family: 'Space Grotesk', sans-serif !important;
+  cursor: pointer;
+}
+
+/* ---------- permissions tree ---------- */
+
+.premiumRoleTree {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.premiumRoleModule {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--base);
+}
+
+.premiumRoleHeader {
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  background: var(--surface);
+}
+
+.premiumRoleTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin-left: 10px;
+}
+
+.premiumSubtypeList {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 14px 12px 46px;
+  gap: 4px;
+}
+
+.premiumSubtypeRow {
+  border-radius: var(--radius-sm);
+}
+
+.premiumSubtypeRowHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  font-size: 0.87rem;
+  color: var(--ink-soft);
+}
+
+.premiumActionList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px 8px 10px 40px;
+}
+
+.premiumActionChip {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.12s ease;
+}
+
+.premiumActionChip input {
+  display: none;
+}
+
+.premiumActionChip.active {
+  background: var(--accent-soft);
+  border-color: rgba(200, 121, 15, 0.3);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 720px) {
+  .premiumFormGrid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .adminUserGrid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Hover Dropdown Logic */
+.hoverDropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+.hoverDropdown .hoverDropdownContent {
+  display: none;
+}
+
+.hoverDropdown:hover .hoverDropdownContent {
+  display: block;
+}
+
+
+/* Fix base text colors */
+.adminSectionHeader p, .floatingLabelInput input { color: #1a1d23 !important; }
+.adminSectionHeader h2 { color: #1a1d23 !important; }
+

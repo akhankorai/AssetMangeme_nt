@@ -1,0 +1,242 @@
+- generic [ref=e3]:
+  - generic [ref=e610]: QA Vehicle Asset 20260502 saved to the database and added to the directory.
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - generic [ref=e10]:
+          - strong [ref=e11]: Precision Assets
+          - generic [ref=e12]: Enterprise Suite
+      - generic [ref=e13]:
+        - button "Vehicle Assets" [expanded] [ref=e14] [cursor=pointer]:
+          - generic [ref=e15]: Vehicle Assets
+          - img [ref=e16]
+        - navigation "Vehicle Assets" [ref=e18]:
+          - button "Dashboard" [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+            - generic [ref=e30]: Dashboard
+          - button "Assets" [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+            - generic [ref=e35]: Assets
+          - button "Schedule" [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+            - generic [ref=e39]: Schedule
+          - button "Expense" [ref=e40] [cursor=pointer]:
+            - img [ref=e41]
+            - generic [ref=e47]: Expense
+          - button "Tasks" [ref=e48] [cursor=pointer]:
+            - img [ref=e49]
+            - generic [ref=e52]: Tasks
+          - button "Team" [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+            - generic [ref=e59]: Team
+          - button "Reports" [ref=e60] [cursor=pointer]:
+            - img [ref=e61]
+            - generic [ref=e64]: Reports
+          - button "Settings" [ref=e65] [cursor=pointer]:
+            - img [ref=e66]
+            - generic [ref=e77]: Settings
+      - button "Information Technology" [ref=e79] [cursor=pointer]:
+        - generic [ref=e80]: Information Technology
+        - img [ref=e81]
+      - button "Feeding" [ref=e84] [cursor=pointer]:
+        - generic [ref=e85]: Feeding
+        - img [ref=e86]
+      - button "Cleaning" [ref=e89] [cursor=pointer]:
+        - generic [ref=e90]: Cleaning
+        - img [ref=e91]
+      - button "Shed Fans" [ref=e94] [cursor=pointer]:
+        - generic [ref=e95]: Shed Fans
+        - img [ref=e96]
+      - button "Electrical Tools" [ref=e99] [cursor=pointer]:
+        - generic [ref=e100]: Electrical Tools
+        - img [ref=e101]
+      - button "Paint Tools" [ref=e104] [cursor=pointer]:
+        - generic [ref=e105]: Paint Tools
+        - img [ref=e106]
+      - button "Plumbing Tools" [ref=e109] [cursor=pointer]:
+        - generic [ref=e110]: Plumbing Tools
+        - img [ref=e111]
+      - button "Welding Tools" [ref=e114] [cursor=pointer]:
+        - generic [ref=e115]: Welding Tools
+        - img [ref=e116]
+      - button "Furniture" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Furniture
+        - img [ref=e121]
+  - main [ref=e123]:
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - img [ref=e126]
+        - searchbox [ref=e129]
+      - generic [ref=e130]:
+        - button "Notifications" [ref=e131] [cursor=pointer]:
+          - img [ref=e132]
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - strong [ref=e137]: Operations Console
+            - generic [ref=e138]: Assets view
+          - generic [ref=e139]: "8"
+    - generic [ref=e536]:
+      - generic [ref=e537]:
+        - button "Registration" [ref=e538] [cursor=pointer]
+        - button "Global Directory" [ref=e539] [cursor=pointer]
+      - generic [ref=e611]:
+        - generic [ref=e612]:
+          - article [ref=e613]:
+            - generic [ref=e614]:
+              - img [ref=e616]
+              - generic [ref=e619]: +Live
+            - text: Total Assets
+            - strong [ref=e620]: "9"
+          - article [ref=e621]:
+            - generic [ref=e622]:
+              - img [ref=e624]
+              - generic [ref=e626]: Critical
+            - text: Maintenance Required
+            - strong [ref=e627]: "0"
+          - article [ref=e628]:
+            - generic [ref=e629]:
+              - img [ref=e631]
+              - generic [ref=e633]: Active
+            - text: Assigned Assets
+            - strong [ref=e634]: "0"
+          - article [ref=e635]:
+            - generic [ref=e636]:
+              - img [ref=e638]
+              - generic [ref=e641]: "Target: 98%"
+            - text: Compliance Rate
+            - strong [ref=e642]: 100.0%
+        - generic [ref=e643]:
+          - generic [ref=e644]:
+            - generic [ref=e645]:
+              - heading "Asset Inventory List" [level=2] [ref=e646]
+              - generic [ref=e647]: Real-time status of enterprise physical assets across all nodes.
+            - generic [ref=e648]:
+              - button "Directory filters" [ref=e649] [cursor=pointer]:
+                - img [ref=e650]
+              - button "Add New Asset" [ref=e651] [cursor=pointer]:
+                - img [ref=e652]
+                - text: Add New Asset
+          - generic [ref=e653]:
+            - generic [ref=e654]:
+              - generic [ref=e655]: Asset Name
+              - generic [ref=e656]: Asset ID
+              - generic [ref=e657]: Category
+              - generic [ref=e658]: Status
+              - generic [ref=e659]: Last Maintenance
+              - generic [ref=e660]: Actions
+            - generic [ref=e661]:
+              - button "QA Vehicle Asset 20260502" [ref=e662] [cursor=pointer]:
+                - img [ref=e664]
+                - strong [ref=e666]: QA Vehicle Asset 20260502
+              - generic [ref=e667]: BI-20260502-385065
+              - generic [ref=e668]: Bike
+              - generic [ref=e669]: Available
+              - generic [ref=e670]: May 2, 2026
+              - generic [ref=e671]:
+                - button "View" [ref=e672] [cursor=pointer]
+                - button "Edit" [ref=e673] [cursor=pointer]
+                - button "Delete" [ref=e674] [cursor=pointer]
+            - generic [ref=e675]:
+              - button "Honda CG 125" [ref=e676] [cursor=pointer]:
+                - img [ref=e678]
+                - strong [ref=e680]: Honda CG 125
+              - generic [ref=e681]: BI-125-184117
+              - generic [ref=e682]: Bike
+              - generic [ref=e683]: Available
+              - generic [ref=e684]: Apr 29, 2026
+              - generic [ref=e685]:
+                - button "View" [ref=e686] [cursor=pointer]
+                - button "Edit" [ref=e687] [cursor=pointer]
+                - button "Delete" [ref=e688] [cursor=pointer]
+            - generic [ref=e689]:
+              - button "Honda City 2004" [ref=e690] [cursor=pointer]:
+                - img [ref=e692]
+                - strong [ref=e694]: Honda City 2004
+              - generic [ref=e695]: CA-2004-988729
+              - generic [ref=e696]: Car
+              - generic [ref=e697]: Available
+              - generic [ref=e698]: May 2, 2026
+              - generic [ref=e699]:
+                - button "View" [ref=e700] [cursor=pointer]
+                - button "Edit" [ref=e701] [cursor=pointer]
+                - button "Delete" [ref=e702] [cursor=pointer]
+            - generic [ref=e703]:
+              - button "Honda Swift - BPL-197" [ref=e704] [cursor=pointer]:
+                - img [ref=e706]
+                - strong [ref=e708]: Honda Swift - BPL-197
+              - generic [ref=e709]: CA-BPL-197-184116
+              - generic [ref=e710]: Car
+              - generic [ref=e711]: Available
+              - generic [ref=e712]: Apr 29, 2026
+              - generic [ref=e713]:
+                - button "View" [ref=e714] [cursor=pointer]
+                - button "Edit" [ref=e715] [cursor=pointer]
+                - button "Delete" [ref=e716] [cursor=pointer]
+            - generic [ref=e717]:
+              - button "BYD" [ref=e718] [cursor=pointer]:
+                - img [ref=e720]
+                - strong [ref=e722]: BYD
+              - generic [ref=e723]: CA-BYD-453959
+              - generic [ref=e724]: Car
+              - generic [ref=e725]: Available
+              - generic [ref=e726]: May 2, 2026
+              - generic [ref=e727]:
+                - button "View" [ref=e728] [cursor=pointer]
+                - button "Edit" [ref=e729] [cursor=pointer]
+                - button "Delete" [ref=e730] [cursor=pointer]
+            - generic [ref=e731]:
+              - button "Civic Reborn" [ref=e732] [cursor=pointer]:
+                - img [ref=e734]
+                - strong [ref=e736]: Civic Reborn
+              - generic [ref=e737]: CA-CIVIC-REBORN-557020
+              - generic [ref=e738]: Car
+              - generic [ref=e739]: Available
+              - generic [ref=e740]: May 2, 2026
+              - generic [ref=e741]:
+                - button "View" [ref=e742] [cursor=pointer]
+                - button "Edit" [ref=e743] [cursor=pointer]
+                - button "Delete" [ref=e744] [cursor=pointer]
+            - generic [ref=e745]:
+              - button "Honda civic" [ref=e746] [cursor=pointer]:
+                - img [ref=e748]
+                - strong [ref=e750]: Honda civic
+              - generic [ref=e751]: CA-HONDA-CIVIC-201957
+              - generic [ref=e752]: Car
+              - generic [ref=e753]: Available
+              - generic [ref=e754]: Apr 30, 2026
+              - generic [ref=e755]:
+                - button "View" [ref=e756] [cursor=pointer]
+                - button "Edit" [ref=e757] [cursor=pointer]
+                - button "Delete" [ref=e758] [cursor=pointer]
+            - generic [ref=e759]:
+              - button "Land Crouser" [ref=e760] [cursor=pointer]:
+                - img [ref=e762]
+                - strong [ref=e764]: Land Crouser
+              - generic [ref=e765]: CA-LAND-CROUSER-722315
+              - generic [ref=e766]: Car
+              - generic [ref=e767]: Available
+              - generic [ref=e768]: Apr 30, 2026
+              - generic [ref=e769]:
+                - button "View" [ref=e770] [cursor=pointer]
+                - button "Edit" [ref=e771] [cursor=pointer]
+                - button "Delete" [ref=e772] [cursor=pointer]
+            - generic [ref=e773]:
+              - button "Ninja H2R" [ref=e774] [cursor=pointer]:
+                - img [ref=e776]
+                - strong [ref=e778]: Ninja H2R
+              - generic [ref=e779]: TR-H2R-767013
+              - generic [ref=e780]: Tractor
+              - generic [ref=e781]: Available
+              - generic [ref=e782]: May 2, 2026
+              - generic [ref=e783]:
+                - button "View" [ref=e784] [cursor=pointer]
+                - button "Edit" [ref=e785] [cursor=pointer]
+                - button "Delete" [ref=e786] [cursor=pointer]
+          - generic [ref=e787]:
+            - generic [ref=e788]: Showing 9 of 9 entries
+            - generic [ref=e789]:
+              - button "Prev" [ref=e790] [cursor=pointer]
+              - generic [ref=e791]: "1"
+              - button "Next" [ref=e792] [cursor=pointer]
+    - generic [ref=e157]: QA Vehicle Asset 20260502 saved to the database and added to the directory.

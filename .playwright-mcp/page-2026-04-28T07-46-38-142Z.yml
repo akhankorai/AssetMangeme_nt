@@ -1,0 +1,148 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - generic [ref=e10]:
+          - strong [ref=e11]: Precision Assets
+          - generic [ref=e12]: Enterprise Suite
+      - generic [ref=e13]:
+        - button "Vehicle Assets" [expanded] [ref=e14] [cursor=pointer]:
+          - generic [ref=e15]: Vehicle Assets
+          - img [ref=e16]
+        - navigation "Vehicle Assets" [ref=e18]:
+          - button "Dashboard" [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+            - generic [ref=e30]: Dashboard
+          - button "Assets" [active] [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+            - generic [ref=e35]: Assets
+          - button "Schedule" [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+            - generic [ref=e39]: Schedule
+          - button "Expense" [ref=e40] [cursor=pointer]:
+            - img [ref=e41]
+            - generic [ref=e47]: Expense
+          - button "Tasks" [ref=e48] [cursor=pointer]:
+            - img [ref=e49]
+            - generic [ref=e52]: Tasks
+          - button "Team" [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+            - generic [ref=e59]: Team
+          - button "Reports" [ref=e60] [cursor=pointer]:
+            - img [ref=e61]
+            - generic [ref=e64]: Reports
+          - button "Settings" [ref=e65] [cursor=pointer]:
+            - img [ref=e66]
+            - generic [ref=e77]: Settings
+      - button "Information Technology" [ref=e79] [cursor=pointer]:
+        - generic [ref=e80]: Information Technology
+        - img [ref=e81]
+      - button "Feeding" [ref=e84] [cursor=pointer]:
+        - generic [ref=e85]: Feeding
+        - img [ref=e86]
+      - button "Cleaning" [ref=e89] [cursor=pointer]:
+        - generic [ref=e90]: Cleaning
+        - img [ref=e91]
+      - button "Shed Fans" [ref=e94] [cursor=pointer]:
+        - generic [ref=e95]: Shed Fans
+        - img [ref=e96]
+      - button "Electrical Tools" [ref=e99] [cursor=pointer]:
+        - generic [ref=e100]: Electrical Tools
+        - img [ref=e101]
+      - button "Paint Tools" [ref=e104] [cursor=pointer]:
+        - generic [ref=e105]: Paint Tools
+        - img [ref=e106]
+      - button "Plumbing Tools" [ref=e109] [cursor=pointer]:
+        - generic [ref=e110]: Plumbing Tools
+        - img [ref=e111]
+      - button "Welding Tools" [ref=e114] [cursor=pointer]:
+        - generic [ref=e115]: Welding Tools
+        - img [ref=e116]
+      - button "Furniture" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Furniture
+        - img [ref=e121]
+  - main [ref=e123]:
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - img [ref=e126]
+        - searchbox [ref=e129]
+      - generic [ref=e130]:
+        - button "Notifications" [ref=e131] [cursor=pointer]:
+          - img [ref=e132]
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - strong [ref=e137]: Operations Console
+            - generic [ref=e138]: Assets view
+          - generic [ref=e139]: "3"
+    - generic [ref=e306]:
+      - generic [ref=e307]:
+        - button "Registration" [ref=e308] [cursor=pointer]
+        - button "Global Directory" [ref=e309] [cursor=pointer]
+      - generic [ref=e310]:
+        - generic [ref=e311]:
+          - generic [ref=e313]:
+            - strong [ref=e314]: New Entry
+            - text: General Information
+          - generic [ref=e315]:
+            - generic [ref=e316]:
+              - generic [ref=e317]: Asset Name
+              - textbox "Asset Name" [ref=e318]:
+                - /placeholder: e.g. Industrial Server Node R-42
+            - generic [ref=e319]:
+              - generic [ref=e320]: Asset Type
+              - button "Asset Type" [ref=e322] [cursor=pointer]:
+                - generic [ref=e323]: Bike
+                - img [ref=e324]
+            - generic [ref=e326]:
+              - generic [ref=e327]: Location Code
+              - combobox "Location Code" [ref=e328]:
+                - option "Select unit" [selected]
+                - option "Unit 1"
+                - option "Unit 2"
+                - option "Unit 3"
+            - generic [ref=e329]:
+              - generic [ref=e330]: Purchase Date
+              - textbox "Purchase Date" [ref=e331]
+            - generic [ref=e332]:
+              - generic [ref=e333]: Warranty Expiry
+              - textbox "Warranty Expiry" [ref=e334]
+            - generic [ref=e335]:
+              - generic [ref=e336]: Meter Reading
+              - spinbutton "Meter Reading" [ref=e337]
+          - button "Upload Technical Documentation PDF, JPG up to 10MB" [ref=e338] [cursor=pointer]:
+            - img [ref=e339]
+            - strong [ref=e343]: Upload Technical Documentation
+            - generic [ref=e344]: PDF, JPG up to 10MB
+          - generic [ref=e345]:
+            - button "Save Draft" [ref=e346] [cursor=pointer]
+            - button "Proceed to Next Step" [ref=e347] [cursor=pointer]
+        - complementary [ref=e348]:
+          - generic [ref=e349]:
+            - generic [ref=e351]:
+              - strong [ref=e352]: Honda Swift 2017 | BPL-013
+              - generic [ref=e353]: "ID: CA-2017-BPL-013-344574"
+            - generic [ref=e356]:
+              - generic [ref=e357]:
+                - generic [ref=e358]: Current Status
+                - strong [ref=e359]: Operational
+              - generic [ref=e361]:
+                - generic [ref=e362]: Last Inspection
+                - strong [ref=e363]: Apr 25, 2026
+          - generic [ref=e364]:
+            - generic [ref=e365]:
+              - heading "Maintenance Log" [level=2] [ref=e366]
+              - button "Export PDF" [ref=e367] [cursor=pointer]
+            - generic [ref=e368]:
+              - article [ref=e369]:
+                - generic [ref=e371]:
+                  - text: Apr 25, 2026
+                  - strong [ref=e372]: Honda Swift 2017 | BPL-013 inspection synced
+                  - paragraph [ref=e373]: Latest record pulled from the asset directory for Fleet Yard / Unit 1.
+              - article [ref=e374]:
+                - generic [ref=e376]:
+                  - text: Apr 25, 2026
+                  - strong [ref=e377]: Software optimization
+                  - paragraph [ref=e378]: Configuration baseline refreshed and integrity metrics recalculated for this unit.
+          - button "View Complete History" [ref=e379] [cursor=pointer]
+    - generic [ref=e157]: Assets view is active in Vehicle Assets.

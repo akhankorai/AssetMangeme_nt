@@ -1,0 +1,134 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - generic [ref=e10]:
+          - strong [ref=e11]: Precision Assets
+          - generic [ref=e12]: Enterprise Suite
+      - generic [ref=e13]:
+        - button "Vehicle Assets" [expanded] [ref=e14] [cursor=pointer]:
+          - generic [ref=e15]: Vehicle Assets
+          - img [ref=e16]
+        - navigation "Vehicle Assets" [ref=e18]:
+          - button "Dashboard" [ref=e19] [cursor=pointer]:
+            - img [ref=e20]
+            - generic [ref=e30]: Dashboard
+          - button "Assets" [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+            - generic [ref=e35]: Assets
+          - button "Schedule" [ref=e36] [cursor=pointer]:
+            - img [ref=e37]
+            - generic [ref=e39]: Schedule
+          - button "Expense" [ref=e40] [cursor=pointer]:
+            - img [ref=e41]
+            - generic [ref=e47]: Expense
+          - button "Tasks" [ref=e48] [cursor=pointer]:
+            - img [ref=e49]
+            - generic [ref=e52]: Tasks
+          - button "Team" [ref=e53] [cursor=pointer]:
+            - img [ref=e54]
+            - generic [ref=e59]: Team
+          - button "Reports" [ref=e60] [cursor=pointer]:
+            - img [ref=e61]
+            - generic [ref=e64]: Reports
+          - button "Settings" [ref=e65] [cursor=pointer]:
+            - img [ref=e66]
+            - generic [ref=e77]: Settings
+      - button "Information Technology" [ref=e79] [cursor=pointer]:
+        - generic [ref=e80]: Information Technology
+        - img [ref=e81]
+      - button "Feeding" [ref=e84] [cursor=pointer]:
+        - generic [ref=e85]: Feeding
+        - img [ref=e86]
+      - button "Cleaning" [ref=e89] [cursor=pointer]:
+        - generic [ref=e90]: Cleaning
+        - img [ref=e91]
+      - button "Shed Fans" [ref=e94] [cursor=pointer]:
+        - generic [ref=e95]: Shed Fans
+        - img [ref=e96]
+      - button "Electrical Tools" [ref=e99] [cursor=pointer]:
+        - generic [ref=e100]: Electrical Tools
+        - img [ref=e101]
+      - button "Paint Tools" [ref=e104] [cursor=pointer]:
+        - generic [ref=e105]: Paint Tools
+        - img [ref=e106]
+      - button "Plumbing Tools" [ref=e109] [cursor=pointer]:
+        - generic [ref=e110]: Plumbing Tools
+        - img [ref=e111]
+      - button "Welding Tools" [ref=e114] [cursor=pointer]:
+        - generic [ref=e115]: Welding Tools
+        - img [ref=e116]
+      - button "Furniture" [ref=e119] [cursor=pointer]:
+        - generic [ref=e120]: Furniture
+        - img [ref=e121]
+  - main [ref=e123]:
+    - generic [ref=e124]:
+      - generic [ref=e125]:
+        - img [ref=e126]
+        - searchbox [ref=e129]
+      - generic [ref=e130]:
+        - button "Notifications" [ref=e131] [cursor=pointer]:
+          - img [ref=e132]
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - strong [ref=e137]: Operations Console
+            - generic [ref=e138]: Assets view
+          - generic [ref=e139]: "2"
+    - generic [ref=e295]:
+      - generic [ref=e296]:
+        - button "Registration" [ref=e297] [cursor=pointer]
+        - button "Global Directory" [ref=e298] [cursor=pointer]
+      - generic [ref=e370]:
+        - generic [ref=e371]:
+          - article [ref=e372]:
+            - generic [ref=e373]:
+              - img [ref=e375]
+              - generic [ref=e378]: +Live
+            - text: Total Assets
+            - strong [ref=e379]: "0"
+          - article [ref=e380]:
+            - generic [ref=e381]:
+              - img [ref=e383]
+              - generic [ref=e385]: Critical
+            - text: Maintenance Required
+            - strong [ref=e386]: "0"
+          - article [ref=e387]:
+            - generic [ref=e388]:
+              - img [ref=e390]
+              - generic [ref=e392]: Active
+            - text: Assigned Assets
+            - strong [ref=e393]: "0"
+          - article [ref=e394]:
+            - generic [ref=e395]:
+              - img [ref=e397]
+              - generic [ref=e400]: "Target: 98%"
+            - text: Compliance Rate
+            - strong [ref=e401]: 0.0%
+        - generic [ref=e402]:
+          - generic [ref=e403]:
+            - generic [ref=e404]:
+              - heading "Asset Inventory List" [level=2] [ref=e405]
+              - generic [ref=e406]: Real-time status of enterprise physical assets across all nodes.
+            - generic [ref=e407]:
+              - button "Directory filters" [ref=e408] [cursor=pointer]:
+                - img [ref=e409]
+              - button "Add New Asset" [ref=e410] [cursor=pointer]:
+                - img [ref=e411]
+                - text: Add New Asset
+          - generic [ref=e412]:
+            - generic [ref=e413]:
+              - generic [ref=e414]: Asset Name
+              - generic [ref=e415]: Asset ID
+              - generic [ref=e416]: Category
+              - generic [ref=e417]: Status
+              - generic [ref=e418]: Last Maintenance
+              - generic [ref=e419]: Actions
+            - generic [ref=e420]: No assets available in the global directory yet.
+          - generic [ref=e421]:
+            - generic [ref=e422]: Showing 0 of 0 entries
+            - generic [ref=e423]:
+              - button "Prev" [ref=e424] [cursor=pointer]
+              - generic [ref=e425]: "1"
+              - button "Next" [ref=e426] [cursor=pointer]
+    - generic [ref=e157]: UI Retest Vehicle Asset 1012 saved to the database and added to the directory.

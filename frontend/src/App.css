@@ -1,0 +1,29 @@
+.userRoleChip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    border: 1px solid #d7e0ec;
+    color: #3f6ba8;
+    background: #eef4fb;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.userRoleChip svg,
+.userRoleChip img {
+    width: 14px;
+    height: 14px;
+}
+
+.userRoleChip:hover {
+    background: #e4eaf1;
+    border-color: #d0dbe7;
+}
+
+.userRoleChip.danger {
+    border-color: #f4b0b8;
+    background: #fce8e9;
+    color: #b34d59;
+}

@@ -1,0 +1,9 @@
+[GET] http://localhost:8000/api/assets/?module=vehicle-assets => [200] OK
+[GET] http://localhost:8000/api/dashboard/?module=vehicle-assets => [200] OK
+[GET] http://localhost:8000/api/categories/?module=vehicle-assets => [200] OK
+[GET] http://localhost:8000/api/expenses/?module=vehicle-assets => [200] OK
+[GET] http://localhost:8000/api/items/?module=vehicle-assets => [200] OK
+[GET] http://localhost:8000/api/service-types/?module=vehicle-assets => [200] OK
+[GET] http://localhost:8000/api/locations/?module=vehicle-assets => [200] OK
+[GET] http://localhost:8000/api/employee-categories/?module=vehicle-assets => [200] OK
+[GET] http://localhost:8000/api/team-members/?module=vehicle-assets => [200] OK

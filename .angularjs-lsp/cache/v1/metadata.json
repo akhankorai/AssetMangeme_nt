@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "tool_version": "0.1.0",
+  "files": {
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\api.js": {
+      "mtime": 1779702122,
+      "size": 14347
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\welding-tools\\index.js": {
+      "mtime": 1777455224,
+      "size": 221
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\information-technology\\index.js": {
+      "mtime": 1777455224,
+      "size": 266
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\vehicle-assets\\services\\vehicleAssetsApi.js": {
+      "mtime": 1779434481,
+      "size": 450
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\vite.config.js": {
+      "mtime": 1779265682,
+      "size": 760
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\vehicle-assets\\services\\apiConfig.js": {
+      "mtime": 1779270852,
+      "size": 794
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\index.js": {
+      "mtime": 1777454526,
+      "size": 947
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\eslint.config.js": {
+      "mtime": 1776924107,
+      "size": 756
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\cleaning\\index.js": {
+      "mtime": 1777455224,
+      "size": 198
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\feeding\\index.js": {
+      "mtime": 1777455224,
+      "size": 193
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\furniture\\index.js": {
+      "mtime": 1777455225,
+      "size": 203
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\vehicle-assets\\index.js": {
+      "mtime": 1779264621,
+      "size": 226
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\electrical-tools\\index.js": {
+      "mtime": 1777455224,
+      "size": 236
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\index.html": {
+      "mtime": 1779703453,
+      "size": 368
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\shed-fans\\index.js": {
+      "mtime": 1777455224,
+      "size": 201
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\paint-tools\\index.js": {
+      "mtime": 1777455224,
+      "size": 211
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\plumbing-tools\\index.js": {
+      "mtime": 1777455224,
+      "size": 226
+    },
+    "d:\\Development\\Asset Management\\Asset Management\\frontend\\src\\modules\\shared\\createModuleApi.js": {
+      "mtime": 1779702128,
+      "size": 5133
+    }
+  }
+}
